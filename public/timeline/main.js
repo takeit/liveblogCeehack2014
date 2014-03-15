@@ -25,16 +25,18 @@ $(document).ready(function() {
             });
         },
         _convertDate: function(date) {
-
             if(date){
-               date = date.replace("-","/");
-            }
+               if(date.indexOf('-') !=-1){
+                 date = '20'+date;
+             }
+         }
+         console.log(date);
 
-           date = new Date(date);
-           var newDate = date.getFullYear() + ',' + date.getMonth() + ',' + date.getDate() + ',' + date.getHours() + ',' + date.getMinutes() + ',' + date.getSeconds();
-           return newDate;
-       },
-       _process: function() {
+         date = new Date(date);
+         var newDate = date.getFullYear() + ',' + date.getMonth() + ',' + date.getDate() + ',' + date.getHours() + ',' + date.getMinutes() + ',' + date.getSeconds();
+         return newDate;
+     },
+     _process: function() {
         var special = ['twitter', 'flickr', 'soundcloud', 'instagram', 'youtube', 'facebook'];
 
         var data = {timeline: {
