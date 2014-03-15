@@ -1,0 +1,47 @@
+
+<!DOCTYPE html PUBLIC>
+<html>
+    <head>
+        <!-- jQuery -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <!-- BEGIN TimelineJS -->
+        <script type="text/javascript" src="timeline/js/storyjs-embed.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <!-- END TimelineJS -->
+        <style>
+            body {
+                font-family: Tahoma, sans-serif;
+            }
+            .rounded {
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+            }
+            #source {
+                border: 1px solid #000000;
+                background-color: #ffffff;
+                line-height: 20px;
+                padding: 4px;
+                width: 50%;
+            }
+            #update {
+                border: 1px solid #000000;
+                background-color: #000000;
+                line-height: 20px;
+                padding: 4px;
+                color: #ffffff;
+            }
+            #info {
+                border: 1px solid #000000;
+                padding: 4px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display: none; width: 100%; height: 60px;">
+            <form id="form"><input class="rounded" id="source"><input type="submit" class="rounded" value="update" id="update"><span id="info"></span></form>
+        </div>
+        <div id="timeline"></div>
+    </body>
+</html>
