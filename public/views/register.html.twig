@@ -44,8 +44,8 @@
 
           <nav class="pull-right right_menu">
             <ul class="nav nav-pills">
-              <li ><a href="/login">Login</a></li>
-              <li><a href="/register">Sign Up</a></li>
+              <li ><a href="#login">Login</a></li>
+              <li class="active"><a href="#signup">Sign Up</a></li>
 
 
             </ul>
@@ -59,45 +59,65 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-12"><h1 class="headline">Tell us your story</h1></div>
+      <div class="col-md-12"><img class="logo" src="views/assets/img/live_blog_logo.png" alt="Live Blog" /></div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 loginbox">
+        <h1>Create Account</h1>
+
+        <form role="form" method="POST" action="" class="login_form">
+
+          <div class="form-group">
+
+            {{ form_row(form.firstName, {attr: {class: "form-control"}})}}
+
+          </div>
+
+          <div class="form-group">
+
+            {{ form_row(form.lastName, {attr: {class: "form-control"}})}}
+
+          </div>
+
+
+          <div class="form-group">
+
+            {{ form_row(form.email, {attr: {class: "form-control"}})}}
+
+          </div>
+
+
+          <div class="form-group">
+
+            {{ form_row(form.login, {attr: {class: "form-control"}})}}
+
+          </div>
+          <div class="form-group">
+            {{ form_row(form.password, {attr: {class: "form-control"}})}}
+
+          </div>
+{{ form_row(form._token)}}
+          <button type="submit" class="btn btn-default pull-right button_green">Sign Up</button>
+        </form>
+      </div>
 
     </div>
 
-    <div class="row">
-        <div class="col-md-4 advantage">
-          <img class="icon_big" src="views/assets/img/embed.png" />
-          <h2>Embed everywhere</h2>
-          <p>Create Your Live Blog in few secounds and<br /> embed everywhere!</p>
-        </div>
-        <div class="col-md-4 advantage">
-          <img class="icon_big" src="views/assets/img/sources.png" />
-                    <h2>7 sources</h2>
-                    <p>Search social networks and drag & drop results<br /> into your Live Blog timeline.</p>
-        </div>
-        <div class="col-md-4 advantage">
-          <img class="icon_big" src="views/assets/img/mobile.png" />
-                              <h2>Go mobile!</h2>
-                              <p>Download iOS app from the app store<br /> or simply send an SMS.</p>
-        </div>
-        <div class="col-md-12 actioncall">
-            <a href="/register" class="btn btn-default button_green">Start now!</a>
-        </div>
-
-   </div>
-
- </div>
+  </div>
 
 
- <script>
- (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-49025303-2', 'bsdz.pl');
-ga('send', 'pageview');
+  ga('create', 'UA-49025303-2', 'bsdz.pl');
+  ga('send', 'pageview');
 
 
-</script>
+
+  </script>
 </body>
 </html>
