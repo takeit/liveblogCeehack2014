@@ -1,0 +1,4 @@
+config:
+    host: "http://mobile.sd-demo.sourcefabric.org"
+    username: "admin"
+    password: "a"

@@ -6,6 +6,9 @@
         "symfony/config": "~2.3",
         "symfony/translation": "~2.3",
         "symfony/locale": "~2.3",
-        "symfony/twig-bridge": "~2.3"
+        "symfony/twig-bridge": "~2.3",
+        "kriswallsmith/buzz": ">=v0.9",
+        "symfony/yaml": "~2.3",
+        "symfony/form": "~2.3"
     }
 }
